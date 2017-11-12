@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+		<!--状态栏的背景颜色-->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<title>DMI计算器</title>
+		<link rel="stylesheet" href="css\calc.css" />
+	</head>
+	
+    <body>
+        <div id="container"> <!--整个布局-->
+            <div id="clac" class="calc">  <!--计算器区域-->
+                <div id="top">   <!--顶部区域-->
+					<div id="win-tool">
+						<a id="about" href="javascript:;" title="关于"><i id="au" class="iconfont about">&#xe610;</i></a>
+					</div>
+					<div id="result">
+						<div id="exp"></div>
+						<div id="res">0</div>
+					</div>
+                </div>
+				<div id="bottom">
+					<div class="row">
+						<span id="reset" data-number="C">CE</span>
+						<span id="remove" data-number="←">←</span>
+						<span data-number="%">%</span>
+						<span data-number="/" class="tool chu">÷</span>
+					</div>
+					<div class="row">
+						<span data-number="7">7</span>
+						<span data-number="8">8</span>
+						<span data-number="9">9</span>
+						<span data-number="*" class="tool cheng">×</span>
+					</div>
+					<div class="row">
+						<span data-number="4">4</span>
+						<span data-number="5">5</span>
+						<span data-number="6">6</span>
+						<span data-number="-" class="tool jiang">ㅡ</span>
+					</div>
+					<div class="row">
+						<span data-number="1">1</span>
+						<span data-number="2">2</span>
+						<span data-number="3">3</span>
+						<span data-number="+" class="tool add">＋</span>
+					</div>
+					<div class="row">
+						<span data-number="0" class="zero">0</span>
+						<span data-number="." class="dian">.</span>
+						<span id="equals" data-number="=" class="tool eq">＝</span>
+					</div>
+				</div>
+				<div id="historyBox">
+					<div class="con">
+						<ul></ul>
+					</div>
+				</div>
+            </div>
+		</div>
+		<script src="js\clac.js"></script>
+					 
+    </body>
+</html>
+
